@@ -13,9 +13,7 @@ export async function createTask(req, res) {
 // Listar todas as tarefas
 export async function getTasks(req, res) {
   try {
-    const db = await connectDB();
-    const tasks = await db.all("SELECT * FROM tasks"); // Busca todas as tarefas
-    res.status(200).json(tasks);
+    // Implementação futura
   } catch (error) {
     console.error("Erro ao buscar tarefas:", error.message);
     res.status(500).json({ error: "Erro ao buscar tarefas" });
