@@ -15,8 +15,9 @@ export async function getTasks(req, res) {
   try {
     // Implementação futura
   } catch (error) {
-    console.error("Erro ao buscar tarefas:", error.message);
-    res.status(500).json({ error: "Erro ao buscar tarefas" });
+    res.status(500).json({ error: "Erro ao listar tarefas",
+                           message: error.message
+     });
   }
 }
 
