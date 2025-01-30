@@ -27,6 +27,7 @@ frontend/.env.local
 frontend/.env.*.local
 frontend/build
 frontend/*.log
+frontend/coverage
 
 # Ignorar arquivos do backend (Node.js)
 backend/*.log
